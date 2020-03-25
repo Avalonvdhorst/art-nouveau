@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="header">
+    <h3>You searched for art in:</h3>
+  </div>
+  <div class="row">
+    <% @arts.each do |art| %>
+    <div class="col-lg-4">
+      <div class="art-card">
+        <div class="photo-border">
+          <div class="card-photo" style="background-image: url('<%= art.photo  %>')">
+          </div>
+        </div>
+        <div class="card-details">
+          <div class="flex-details">
+            <%= art.name %>
+            <p> € <%= art.price_per_week %></p>
+         </div>
+         <div>
+          <p><%= art.location %></p>
+         </div>
+        </div> <!-- closing card-details -->
+      </div> <!-- closing art-card -->
+    </div>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+2020-03-19 19:33:59.387 CET [24168] LOG:  starting PostgreSQL 12.2 on x86_64-apple-darwin18.7.0, compiled by Apple clang version 11.0.0 (clang-1100.0.33.17), 64-bit
+2020-03-19 19:33:59.389 CET [24168] LOG:  listening on IPv6 address "::1", port 5432
+2020-03-19 19:33:59.389 CET [24168] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2020-03-19 19:33:59.391 CET [24168] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2020-03-19 19:33:59.429 CET [24169] LOG:  database system was shut down at 2020-03-12 18:55:19 CET
+2020-03-19 19:33:59.446 CET [24168] LOG:  database system is ready to accept connections
+2020-03-23 12:58:45.263 CET [63656] ERROR:  column "email" of relation "users" already exists
+2020-03-23 12:58:45.263 CET [63656] STATEMENT:  ALTER TABLE "users" ADD "email" character varying
+2020-03-23 21:23:41.696 CET [24168] LOG:  received smart shutdown request
+2020-03-23 21:23:41.698 CET [24168] LOG:  background worker "logical replication launcher" (PID 24175) exited with exit code 1
+2020-03-23 21:23:41.698 CET [24170] LOG:  shutting down
+2020-03-23 21:23:41.717 CET [24168] LOG:  database system is shut down
+2020-03-25 13:08:44.976 CET [8742] LOG:  starting PostgreSQL 12.2 on x86_64-apple-darwin18.7.0, compiled by Apple clang version 11.0.0 (clang-1100.0.33.17), 64-bit
+2020-03-25 13:08:44.978 CET [8742] LOG:  listening on IPv6 address "::1", port 5432
+2020-03-25 13:08:44.978 CET [8742] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2020-03-25 13:08:44.980 CET [8742] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2020-03-25 13:08:45.042 CET [8743] LOG:  database system was shut down at 2020-03-23 21:23:41 CET
+2020-03-25 13:08:45.067 CET [8742] LOG:  database system is ready to accept connections
