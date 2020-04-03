@@ -12,7 +12,7 @@
         </div>
         <div class="card-details">
           <div class="flex-details">
-            <%= art.name %>
+            <%= link_to art.name, art_path(art) %>
             <p> € <%= art.price_per_week %></p>
          </div>
          <div>

@@ -3,7 +3,21 @@ class ArtsController < ApplicationController
   end
 
   def index
-    @arts = Art.all
+    if params[:query].present?
+      @arts = Art.where("location ILIKE ?", "%#{params[:query]}%")
+    else
+      @arts = Art.all
+    end
+  end
+
+  def show
+    @art = Art.find(params[:id])
+
+    @markers =
+      {
+        lng: @art.longitude,
+        lat: @art.latitude
+      }
   end
 
   def new

@@ -2,6 +2,14 @@
   <div>
     <div class="search-box">
       <h1>Find new pieces for your house</h1>
+      <%= form_tag arts_path, method: :get do %>
+        <%= text_field_tag :query,
+          params[:query],
+          class: "form-control",
+          placeholder: "Where are you looking?"
+        %>
+        <%= submit_tag "Search", class: "btn btn-info" %>
+      <% end %>
     </div>
     <div class="button-index-page">
       <%= link_to "See al available art", arts_path %>
