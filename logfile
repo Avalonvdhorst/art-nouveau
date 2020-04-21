@@ -26,3 +26,12 @@
 2020-04-03 15:04:21.064 CEST [17025] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
 2020-04-03 15:04:21.108 CEST [17026] LOG:  database system was shut down at 2020-03-30 21:00:30 CEST
 2020-04-03 15:04:21.169 CEST [17025] LOG:  database system is ready to accept connections
+2020-04-09 12:31:51.263 CEST [17025] LOG:  statistics collector process (PID 17031) was terminated by signal 9: Killed: 9
+2020-04-09 12:32:16.090 CEST [17025] LOG:  statistics collector process (PID 56338) was terminated by signal 9: Killed: 9
+2020-04-09 12:33:15.081 CEST [17030] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2020-04-21 16:40:20.513 CEST [78883] ERROR:  update or delete on table "users" violates foreign key constraint "fk_rails_9e3b72c69d" on table "arts"
+2020-04-21 16:40:20.513 CEST [78883] DETAIL:  Key (id)=(3) is still referenced from table "arts".
+2020-04-21 16:40:20.513 CEST [78883] STATEMENT:  DELETE FROM "users" WHERE "users"."id" = $1
+2020-04-21 17:16:58.289 CEST [80899] ERROR:  database "art-nouveau_development" is being accessed by other users
+2020-04-21 17:16:58.289 CEST [80899] DETAIL:  There is 1 other session using the database.
+2020-04-21 17:16:58.289 CEST [80899] STATEMENT:  DROP DATABASE IF EXISTS "art-nouveau_development"
