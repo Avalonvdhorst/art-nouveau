@@ -35,3 +35,16 @@
 2020-04-21 17:16:58.289 CEST [80899] ERROR:  database "art-nouveau_development" is being accessed by other users
 2020-04-21 17:16:58.289 CEST [80899] DETAIL:  There is 1 other session using the database.
 2020-04-21 17:16:58.289 CEST [80899] STATEMENT:  DROP DATABASE IF EXISTS "art-nouveau_development"
+2020-04-24 18:56:59.039 CEST [9178] ERROR:  database "art-nouveau_development" is being accessed by other users
+2020-04-24 18:56:59.039 CEST [9178] DETAIL:  There is 1 other session using the database.
+2020-04-24 18:56:59.039 CEST [9178] STATEMENT:  DROP DATABASE IF EXISTS "art-nouveau_development"
+2020-04-26 01:12:33.466 CEST [17025] LOG:  received smart shutdown request
+2020-04-26 01:12:33.469 CEST [17025] LOG:  background worker "logical replication launcher" (PID 17032) exited with exit code 1
+2020-04-26 01:12:33.471 CEST [17027] LOG:  shutting down
+2020-04-26 01:12:33.492 CEST [17025] LOG:  database system is shut down
+2020-04-26 13:08:06.798 CEST [2195] LOG:  starting PostgreSQL 12.2 on x86_64-apple-darwin18.7.0, compiled by Apple clang version 11.0.0 (clang-1100.0.33.17), 64-bit
+2020-04-26 13:08:06.800 CEST [2195] LOG:  listening on IPv6 address "::1", port 5432
+2020-04-26 13:08:06.800 CEST [2195] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2020-04-26 13:08:06.804 CEST [2195] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2020-04-26 13:08:06.878 CEST [2196] LOG:  database system was shut down at 2020-04-26 01:12:33 CEST
+2020-04-26 13:08:06.896 CEST [2195] LOG:  database system is ready to accept connections

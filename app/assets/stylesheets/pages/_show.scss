@@ -1,11 +1,106 @@
-// #map {
-//   position: absolute;
-//   top: 0;
-//   bottom: 0;
-//   width: 100%;
+
+// .container-map {
+//   display: flex;
+//   justify-content: space-around;
+//   width: 95%;
 // }
-.container-map {
+
+.main-show {
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  width: 100vw;
   display: flex;
-  justify-content: space-around;
-  width: 95%;
+  justify-content: space-between;
 }
+
+// CSS FOR THE ART PIECE
+.photo-outside-shadow {
+  border: 1px solid white;
+  box-shadow: 10px 4px 17px 8px rgba(0,0,0,0.75);
+}
+
+.art-card-hori {
+  margin-left: 115%;
+  padding-top: 80px;
+  width: 350px;
+}
+
+.art-photo-hori {
+  margin: 8px;
+  height: 200px
+}
+
+.art-card-vert {
+  margin-left: 178%;
+  padding-top: 50px;
+  width: 250px;
+}
+
+.art-photo-vert {
+  margin: 8px;
+  height: 300px
+}
+
+// CSS FOR THE ART DETAILS RIGHT SIDE
+
+.art-details {
+  margin-right: 12%;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  height: 200px;
+  padding-top: 100px;
+}
+
+.art-title {
+  font-weight: 300;
+  line-height: 44%;
+  font-size: 44px;
+  padding-bottom: 10px;
+}
+
+.art-measures {
+  font-style: italic;
+  line-height: 40%;
+  padding-bottom: 18px;
+  font-size: 18px;
+}
+
+.artist-location {
+  font-size: 28px;
+  font-style: italic;
+  line-height: 40%;
+}
+
+#location-style {
+  font-size: 22px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+
+.prices {
+  letter-spacing: 2px;
+  font-size: 30px;
+}
+.button-book-now {
+  font-family: 'Open Sans', sans-serif;
+  padding: 7px 12px 6px 22px;
+  border-radius: 2px;
+  font-size: 20px;
+  font-weight: normal;
+  background-color: #474747;
+  opacity: 1;
+  width: 155px;
+  &:hover {
+    color: black;
+    background-color: #b5b6b9;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    &:hover {
+      color: black;
+    }
+  }
+}
+

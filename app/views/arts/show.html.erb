@@ -1,9 +1,56 @@
-<p>showpage</p>
-<div class="container-map">
+
+<!-- <div class="container-map">
   <div
     id="map"
     style="height: 300px; width: 600px"
     data-markers="<%= @markers.to_json %>"
     data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"
   ></div>
+</div> -->
+
+<div class="main-show" style="background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url('<%= cl_image_path("NOVOART/show-edited-two", crop: "fill")%>')">
+  <div class="art-piece">
+    <% if @art.width > @art.height %>
+    <div class="art-card-hori">
+      <div class="photo-outside-shadow">
+        <div class="photo-border">
+          <div class="art-photo-hori" style="background-image: url('<%= @art.photo  %>')">
+          </div>
+        </div>
+      </div>
+    </div>
+    <% else %>
+    <div class="art-card-vert">
+      <div class="photo-outside-shadow">
+        <div class="photo-border">
+          <div class="art-photo-vert" style="background-image: url('<%= @art.photo  %>')">
+          </div>
+        </div>
+      </div>
+    </div>
+    <% end %>
+  </div>
+
+  <div class="art-details">
+    <div class="art-title">
+      <p> <%= @art.name.split(" ")[0].upcase %> </p>
+      <p> <%= @art.name.split(" ")[1...-1].join(" ").upcase unless nil %></p>
+      <p> <%= @art.name.split(" ")[-1].upcase %> </p>
+    </div>
+    <div class="art-measures">
+      <p><%= @art.height.round %>cm x <%= @art.width.round %>cm</p>
+      <p>(<%= @art.paint_type %>)</p>
+      <p></p>
+    </div>
+    <div class="artist-location">
+      <p><%= @art.artist %></p>
+      <p id="location-style"><%= @art.location.upcase %></p>
+    </div>
+    <div class="prices">
+      <p><%= @art.price_per_week %>€/WEEK</p>
+    </div>
+    <div class="button-book-now">
+      <%= link_to "BOOK NOW",  new_art_booking_path(@art) %>
+    </div>
+  </div>
 </div>

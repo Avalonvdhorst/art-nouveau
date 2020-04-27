@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_21_142807) do
+ActiveRecord::Schema.define(version: 2020_04_26_111913) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -29,7 +29,23 @@ ActiveRecord::Schema.define(version: 2020_04_21_142807) do
     t.float "longitude"
     t.float "height"
     t.float "width"
+    t.string "paint_type"
     t.index ["user_id"], name: "index_arts_on_user_id"
+  end
+
+  create_table "bookings", force: :cascade do |t|
+    t.bigint "user_id"
+    t.bigint "art_id"
+    t.date "start_date"
+    t.date "end_date"
+    t.integer "start_hour"
+    t.integer "end_hour"
+    t.string "status"
+    t.integer "total_price"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["art_id"], name: "index_bookings_on_art_id"
+    t.index ["user_id"], name: "index_bookings_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -49,4 +65,6 @@ ActiveRecord::Schema.define(version: 2020_04_21_142807) do
   end
 
   add_foreign_key "arts", "users"
+  add_foreign_key "bookings", "arts"
+  add_foreign_key "bookings", "users"
 end

@@ -12,10 +12,15 @@
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)
 // or the `imagePath` JavaScript helper below.
 //
+/*
+ *= require flatpicker/dist/flatpicker
+ */
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 import 'bootstrap';
+import "../plugins/flatpickr"
 // import 'mapbox-gl/dist/mapbox-gl.css'; // <-- you need to uncomment the stylesheet_pack_tag in the layout!
+
 
 import { initMapbox } from '../plugins/init_mapbox';
 
