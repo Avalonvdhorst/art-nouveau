@@ -48,3 +48,72 @@
 2020-04-26 13:08:06.804 CEST [2195] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
 2020-04-26 13:08:06.878 CEST [2196] LOG:  database system was shut down at 2020-04-26 01:12:33 CEST
 2020-04-26 13:08:06.896 CEST [2195] LOG:  database system is ready to accept connections
+2020-05-04 14:37:17.636 CEST [2195] LOG:  received smart shutdown request
+2020-05-04 14:37:17.638 CEST [2195] LOG:  background worker "logical replication launcher" (PID 2202) exited with exit code 1
+2020-05-04 14:37:17.638 CEST [2197] LOG:  shutting down
+2020-05-04 14:37:17.659 CEST [2195] LOG:  database system is shut down
+2020-05-16 18:08:37.272 CEST [3880] LOG:  starting PostgreSQL 12.2 on x86_64-apple-darwin18.7.0, compiled by Apple clang version 11.0.0 (clang-1100.0.33.17), 64-bit
+2020-05-16 18:08:37.275 CEST [3880] LOG:  listening on IPv6 address "::1", port 5432
+2020-05-16 18:08:37.275 CEST [3880] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2020-05-16 18:08:37.277 CEST [3880] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2020-05-16 18:08:37.312 CEST [3881] LOG:  database system was shut down at 2020-05-04 14:37:17 CEST
+2020-05-16 18:08:37.326 CEST [3880] LOG:  database system is ready to accept connections
+2020-06-26 11:36:12.240 CEST [3880] LOG:  received smart shutdown request
+2020-06-26 11:36:12.244 CEST [3880] LOG:  background worker "logical replication launcher" (PID 3887) exited with exit code 1
+2020-06-26 11:36:12.246 CEST [3882] LOG:  shutting down
+2020-06-26 11:36:12.271 CEST [3880] LOG:  database system is shut down
+2020-09-15 11:32:58.496 CEST [1164] LOG:  starting PostgreSQL 12.2 on x86_64-apple-darwin18.7.0, compiled by Apple clang version 11.0.0 (clang-1100.0.33.17), 64-bit
+2020-09-15 11:32:58.498 CEST [1164] LOG:  listening on IPv6 address "::1", port 5432
+2020-09-15 11:32:58.498 CEST [1164] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2020-09-15 11:32:58.501 CEST [1164] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2020-09-15 11:32:58.547 CEST [1165] LOG:  database system was shut down at 2020-09-14 18:31:51 CEST
+2020-09-15 11:32:58.570 CEST [1164] LOG:  database system is ready to accept connections
+2020-09-15 11:33:11.505 CEST [1201] ERROR:  database "art-nouveau_development" already exists
+2020-09-15 11:33:11.505 CEST [1201] STATEMENT:  CREATE DATABASE "art-nouveau_development" ENCODING = 'unicode'
+2020-09-15 11:33:11.519 CEST [1212] ERROR:  database "art-nouveau_test" already exists
+2020-09-15 11:33:11.519 CEST [1212] STATEMENT:  CREATE DATABASE "art-nouveau_test" ENCODING = 'unicode'
+2020-09-15 18:33:34.842 CEST [1164] LOG:  received smart shutdown request
+2020-09-15 18:33:34.845 CEST [1164] LOG:  background worker "logical replication launcher" (PID 1171) exited with exit code 1
+2020-09-15 18:33:34.845 CEST [1166] LOG:  shutting down
+2020-09-15 18:33:34.863 CEST [1164] LOG:  database system is shut down
+2020-09-16 10:48:50.057 CEST [969] LOG:  starting PostgreSQL 12.2 on x86_64-apple-darwin18.7.0, compiled by Apple clang version 11.0.0 (clang-1100.0.33.17), 64-bit
+2020-09-16 10:48:50.059 CEST [969] LOG:  listening on IPv6 address "::1", port 5432
+2020-09-16 10:48:50.059 CEST [969] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2020-09-16 10:48:50.060 CEST [969] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2020-09-16 10:48:50.150 CEST [970] LOG:  database system was shut down at 2020-09-15 18:33:34 CEST
+2020-09-16 10:48:50.167 CEST [969] LOG:  database system is ready to accept connections
+2020-09-16 10:49:03.321 CEST [1005] ERROR:  database "art-nouveau_development" already exists
+2020-09-16 10:49:03.321 CEST [1005] STATEMENT:  CREATE DATABASE "art-nouveau_development" ENCODING = 'unicode'
+2020-09-16 10:49:03.336 CEST [1016] ERROR:  database "art-nouveau_test" already exists
+2020-09-16 10:49:03.336 CEST [1016] STATEMENT:  CREATE DATABASE "art-nouveau_test" ENCODING = 'unicode'
+2020-09-16 17:07:44.400 CEST [7500] WARNING:  there is no transaction in progress
+2020-09-16 18:23:27.982 CEST [969] LOG:  received smart shutdown request
+2020-09-16 18:23:27.984 CEST [969] LOG:  background worker "logical replication launcher" (PID 976) exited with exit code 1
+2020-09-16 18:23:27.984 CEST [971] LOG:  shutting down
+2020-09-16 18:23:28.000 CEST [969] LOG:  database system is shut down
+2020-09-17 11:52:06.620 CEST [3209] LOG:  starting PostgreSQL 12.2 on x86_64-apple-darwin18.7.0, compiled by Apple clang version 11.0.0 (clang-1100.0.33.17), 64-bit
+2020-09-17 11:52:06.621 CEST [3209] LOG:  listening on IPv6 address "::1", port 5432
+2020-09-17 11:52:06.622 CEST [3209] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2020-09-17 11:52:06.623 CEST [3209] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2020-09-17 11:52:06.683 CEST [3210] LOG:  database system was shut down at 2020-09-16 18:23:27 CEST
+2020-09-17 11:52:06.696 CEST [3209] LOG:  database system is ready to accept connections
+2020-09-17 19:30:30.086 CEST [3209] LOG:  received smart shutdown request
+2020-09-17 19:30:30.088 CEST [3209] LOG:  background worker "logical replication launcher" (PID 3216) exited with exit code 1
+2020-09-17 19:30:30.089 CEST [3211] LOG:  shutting down
+2020-09-17 19:30:30.106 CEST [3209] LOG:  database system is shut down
+2020-09-18 13:48:13.543 CEST [2699] LOG:  starting PostgreSQL 12.2 on x86_64-apple-darwin18.7.0, compiled by Apple clang version 11.0.0 (clang-1100.0.33.17), 64-bit
+2020-09-18 13:48:13.545 CEST [2699] LOG:  listening on IPv6 address "::1", port 5432
+2020-09-18 13:48:13.545 CEST [2699] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2020-09-18 13:48:13.548 CEST [2699] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2020-09-18 13:48:13.635 CEST [2700] LOG:  database system was shut down at 2020-09-17 19:30:30 CEST
+2020-09-18 13:48:13.651 CEST [2699] LOG:  database system is ready to accept connections
+2020-09-18 16:55:55.241 CEST [2699] LOG:  received smart shutdown request
+2020-09-18 16:55:55.244 CEST [2699] LOG:  background worker "logical replication launcher" (PID 2706) exited with exit code 1
+2020-09-18 16:55:55.244 CEST [2701] LOG:  shutting down
+2020-09-18 16:55:55.258 CEST [2699] LOG:  database system is shut down
+2020-09-22 10:31:51.489 CEST [855] LOG:  starting PostgreSQL 12.2 on x86_64-apple-darwin18.7.0, compiled by Apple clang version 11.0.0 (clang-1100.0.33.17), 64-bit
+2020-09-22 10:31:51.490 CEST [855] LOG:  listening on IPv6 address "::1", port 5432
+2020-09-22 10:31:51.490 CEST [855] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2020-09-22 10:31:51.494 CEST [855] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2020-09-22 10:31:51.555 CEST [856] LOG:  database system was shut down at 2020-09-18 16:55:55 CEST
+2020-09-22 10:31:51.569 CEST [855] LOG:  database system is ready to accept connections

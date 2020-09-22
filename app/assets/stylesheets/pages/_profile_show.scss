@@ -1,0 +1,68 @@
+.my-profile-flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.frame {
+  background-image: url("avatar-frame.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 50px solid transparent;
+  padding: 8px;
+  margin-bottom: 15px;
+  width: 380px;
+  height: 250px;
+}
+
+.user-avatar {
+  width: 200px;
+  height: 140px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  content-align: center;
+  margin-bottom: 20px;
+  margin-left: 33px;
+  padding: 5px;
+}
+
+.booking-card {
+  overflow: hidden;
+  height: 120px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+}
+
+.booking-card img {
+  height: 100%;
+  width: 120px;
+  object-fit: cover;
+  padding: 10px;
+}
+
+.booking-card h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.booking-card p {
+  font-size: 16px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.booking-info {
+  padding: 16px;
+}
+
+.booking-info-flex {
+  display: flex;
+  justify-content: space-between;
+}
+

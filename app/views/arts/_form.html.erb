@@ -3,8 +3,12 @@
 <%= f.input :artist %>
 <%= f.input :price_per_week %>
 <%= f.input :description %>
+<div class="flex-input">
+<%= f.input :width %>
+<%= f.input :height %>
+</div>
 <%= f.input :location %>
-<%= f.input :photo %>
+<%= f.input :photo, as: :file %>
 <%= f.submit %>
 <% end %>
 

@@ -1,7 +1,7 @@
 .navbar-transparant {
   background-color: rgba(255, 255, 255, 0.7);
   position: fixed;
-  // width: 100%;
+  width: 100vw;
 }
 
 #logo-margin-left {
@@ -19,7 +19,6 @@
 }
 
 .navbar-lewagon {
-  margin: 0px 20px;
   justify-content: space-between;
 }
 

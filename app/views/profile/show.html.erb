@@ -1,0 +1,68 @@
+<div class="container">
+  <div class="my-profile-flex">
+    <div class="frame">
+      <div class="user-avatar" style="background-image: url('<%= @user.avatar %>');">
+      </div>
+    </div>
+    <div class="user-info">
+
+    </div>
+
+  </div> <!----- Closing the my-profile-flex div ---->
+
+
+  <div class="row">
+    <div class="my-bookings">
+      <h3>My Bookings</h3>
+      <div class="col-10"></div>
+      <% @bookings.each do |booking| %>
+        <div class="booking-card">
+          <img src=" <%= cl_image_path booking.art.photo.key %> ">
+          <div class="booking-info">
+            <h2><%= booking.art.name %></h2>
+            <p>From <%= booking.start_date %> To <%= booking.end_date %> </p>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div> <!--- closing the my-bookings div --->
+  </div>  <!--- closing row div --->
+  <div class="row">
+    <div class="my-requests">
+    <h3>My Requests</h3>
+      <% @artworks.each do |artwork| %>
+      <% artwork.bookings.each do |booking| %>
+        <div class="booking-card">
+          <img src=" <%= cl_image_path booking.art.photo.key %> ">
+          <div class="booking-info-flex">
+            <div class="booking-info">
+            <h2><%= booking.art.name %></h2>
+            <p><strong> Requested by: <%= booking.user.first_name %> <%= booking.user.last_name %> </strong></p>
+            <p>From <%= booking.start_date %> To <%= booking.end_date %> </p>
+            </div>
+            <div class="pending-booking">
+              <% if booking.status == "Pending" %>
+                <div>
+                  <%= link_to "Accept", accept_path(booking.id)  %>
+                </div>
+                <div>
+                  <%= link_to "Decline", decline_path(booking.id)  %>
+                </div>
+              <% elsif booking.status == "Accepted" %>
+              <div class="accepted">
+                <p>You accepted this booking</p>
+              </div>
+              <% else %>
+                <div class="accepted">
+                  <p>You declined this booking</p>
+                </div>
+              <% end %>
+            </div>
+            </div>
+          </div>
+        </div>
+        <% end %>
+      <% end %>
+    </div> <!--- closing the my-requests div --->
+  </div> <!--- closing row div --->
+</div>

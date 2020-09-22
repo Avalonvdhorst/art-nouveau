@@ -1,4 +1,4 @@
-<div class="main" style="background-image: url('<%= cl_image_path("NOVOART/background_index")%>')">
+<div class="main" style="height: calc(100vh - 65px); overflow: scroll; background-image: url('<%= cl_image_path("NOVOART/background_index")%>')">
   <div class="container">
     <!-- <div class="header"> -->
       <!-- <h3>You searched for art in:</h3> -->
@@ -8,34 +8,34 @@
       <div class="col-lg-4 pt-3">
 
         <% if art.width > art.height %>
-        <%= link_to art_path(art) do %>
-        <div class="art-card-horizontal">
-          <div class="photo-border">
-            <div class="card-photo-horizontal" style="background-image: url('<%= art.photo  %>')">
-            </div>
-          </div>
-          <% end %> <!-- closing the link_to -->
-          <div class="card-details">
-            <div class="flex-details">
-              <div class="cool-title">
-                <p> <%= art.name.split(" ")[0].upcase %> </p>
-                <p> <%= art.name.split(" ")[1...-1].join(" ").upcase unless nil %></p>
-                <p> <%= art.name.split(" ")[-1].upcase %> </p>
-              </div>
-              <div class="right-details-card">
-                <p><%= art.location %></p>
-                <p> € <%= art.price_per_week %></p>
+          <%= link_to art_path(art) do %>
+          <div class="art-card-horizontal">
+            <div class="photo-border">
+              <div class="card-photo-horizontal" style="background-image: url('<%= cl_image_path art.photo.key %>')">
               </div>
             </div>
-          </div> <!-- closing card-details -->
-        </div> <!-- closing art-card -->
+            <% end %> <!-- closing the link_to -->
+            <div class="card-details">
+              <div class="flex-details">
+                <div class="cool-title">
+                  <p> <%= art.name.split(" ")[0].upcase %> </p>
+                  <p> <%= art.name.split(" ")[1...-1].join(" ").upcase unless nil %></p>
+                  <p> <%= art.name.split(" ")[-1].upcase %> </p>
+                </div>
+                <div class="right-details-card">
+                  <p><%= art.location %></p>
+                  <p> € <%= art.price_per_week %></p>
+                </div>
+              </div>
+            </div> <!-- closing card-details -->
+          </div> <!-- closing art-card -->
 
         <% else %>
 
         <%= link_to art_path(art) do %>
         <div class="art-card-vertical">
           <div class="photo-border">
-            <div class="card-photo-vertical" style="background-image: url('<%= art.photo  %>')">
+            <div class="card-photo-vertical" style="background-image: url('<%= cl_image_path art.photo.key %>')">
             </div>
           </div>
           <% end %> <!-- closing the link_to -->

@@ -10,25 +10,14 @@
 
 <div class="main-show" style="background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url('<%= cl_image_path("NOVOART/show-edited-two", crop: "fill")%>')">
   <div class="art-piece">
-    <% if @art.width > @art.height %>
-    <div class="art-card-hori">
+    <div class="<%= @art.width > @art.height ? "art-card-hori" : "art-card-vert" %>">
       <div class="photo-outside-shadow">
         <div class="photo-border">
-          <div class="art-photo-hori" style="background-image: url('<%= @art.photo  %>')">
+          <div class="<%= @art.width > @art.height ? "art-photo-hori" : "art-photo-vert" %>" style="background-image: url('<%= cl_image_path @art.photo.key %>')">
           </div>
         </div>
       </div>
     </div>
-    <% else %>
-    <div class="art-card-vert">
-      <div class="photo-outside-shadow">
-        <div class="photo-border">
-          <div class="art-photo-vert" style="background-image: url('<%= @art.photo  %>')">
-          </div>
-        </div>
-      </div>
-    </div>
-    <% end %>
   </div>
 
   <div class="art-details">
@@ -39,7 +28,7 @@
     </div>
     <div class="art-measures">
       <p><%= @art.height.round %>cm x <%= @art.width.round %>cm</p>
-      <p>(<%= @art.paint_type %>)</p>
+      <p>Oil on canvas</p>
       <p></p>
     </div>
     <div class="artist-location">
