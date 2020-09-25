@@ -21,18 +21,20 @@
 }
 
 .art-card-hori {
-  margin-left: 115%;
+  margin-left: 95%;
   padding-top: 80px;
   width: 350px;
 }
 
 .art-photo-hori {
   margin: 8px;
-  height: 200px
+  height: 200px;
+  background-position: center;
+  background-size: cover;
 }
 
 .art-card-vert {
-  margin-left: 178%;
+  margin-left: 155%;
   padding-top: 50px;
   width: 250px;
 }

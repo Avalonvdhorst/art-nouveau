@@ -5,5 +5,5 @@ class Art < ApplicationRecord
   has_many :bookings
 
   has_one_attached :photo
-  CATEGORIES = "fgjgh"
+  PAINT_TYPES = ["Oil on canvas", "Aquarel", "Handdrawn"]
 end

@@ -1,6 +1,8 @@
-.my-profile-flex {
-  display: flex;
-  justify-content: space-around;
+.profile-banner {
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 50px;
 }
 
 .frame {
@@ -10,30 +12,59 @@
   background-position: center;
   border: 50px solid transparent;
   padding: 8px;
-  margin-bottom: 15px;
+  margin: auto;
+  margin-top: 50px;
   width: 380px;
   height: 250px;
 }
 
 .user-avatar {
   width: 200px;
-  height: 140px;
+  height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   content-align: center;
-  margin-bottom: 20px;
-  margin-left: 33px;
+  margin: auto;
   padding: 5px;
+}
+
+.user-info {
+  color: white;
+  font-weight: 300;
+  line-height: 32%;
+  font-size: 30px;
+  margin: auto;
+  margin-top: 150px;
+  text-shadow: 1px 1px 4px rgba(10,4,3,0.5);
 }
 
 .booking-card {
   overflow: hidden;
   height: 120px;
   background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
+  margin: 12px 0px;
+}
+
+.green-accepted {
+  text-shadow: 2px 2px 7px rgba(41, 101, 86, 0.70);
+}
+
+.red-declined {
+  text-shadow: 2px 2px 7px rgba(165, 38, 59, 0.70);
+}
+
+.my-something-upcased {
+  font-weight: 300;
+  line-height: 28%;
+  font-size: 30px;
+}
+
+.margin-bottom-bookings {
+  margin-bottom: 28px;
 }
 
 .booking-card img {
@@ -51,14 +82,15 @@
 
 .booking-card p {
   font-size: 16px;
-  line-height: 1.4;
+  //line-height: 1.4;
   opacity: .7;
   margin-bottom: 0;
-  margin-top: 8px;
+  //margin-top: 8px;
 }
 
 .booking-info {
-  padding: 16px;
+  margin-right: 28px;
+  margin-left: 5px;
 }
 
 .booking-info-flex {

@@ -4,11 +4,11 @@
 <%= f.input :price_per_week %>
 <%= f.input :description %>
 <div class="flex-input">
-<%= f.input :width %>
-<%= f.input :height %>
+  <%= f.input :width %>
+  <%= f.input :height %>
 </div>
 <%= f.input :location %>
-<%= f.input :photo, as: :file %>
+<%= f.input :photo, as: :file, input_html: { class: 'd-none'}, label_html: { class: 'upload-photo'}, label: '<i class="fas fa-camera-retro fa-lg"></i> Upload'.html_safe %>
 <%= f.submit %>
 <% end %>
 

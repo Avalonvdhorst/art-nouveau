@@ -117,3 +117,43 @@
 2020-09-22 10:31:51.494 CEST [855] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
 2020-09-22 10:31:51.555 CEST [856] LOG:  database system was shut down at 2020-09-18 16:55:55 CEST
 2020-09-22 10:31:51.569 CEST [855] LOG:  database system is ready to accept connections
+2020-09-22 17:54:28.337 CEST [855] LOG:  received smart shutdown request
+2020-09-22 17:54:28.340 CEST [855] LOG:  background worker "logical replication launcher" (PID 862) exited with exit code 1
+2020-09-22 17:54:28.340 CEST [857] LOG:  shutting down
+2020-09-22 17:54:28.355 CEST [855] LOG:  database system is shut down
+2020-09-22 22:15:21.240 CEST [2027] LOG:  starting PostgreSQL 12.2 on x86_64-apple-darwin18.7.0, compiled by Apple clang version 11.0.0 (clang-1100.0.33.17), 64-bit
+2020-09-22 22:15:21.242 CEST [2027] LOG:  listening on IPv6 address "::1", port 5432
+2020-09-22 22:15:21.242 CEST [2027] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2020-09-22 22:15:21.243 CEST [2027] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2020-09-22 22:15:21.286 CEST [2028] LOG:  database system was shut down at 2020-09-22 17:54:28 CEST
+2020-09-22 22:15:21.307 CEST [2027] LOG:  database system is ready to accept connections
+2020-09-23 09:25:58.423 CEST [2027] LOG:  received smart shutdown request
+2020-09-23 09:25:58.426 CEST [2027] LOG:  background worker "logical replication launcher" (PID 2034) exited with exit code 1
+2020-09-23 09:25:58.426 CEST [2029] LOG:  shutting down
+2020-09-23 09:25:58.442 CEST [2027] LOG:  database system is shut down
+2020-09-23 12:51:27.319 CEST [1878] LOG:  starting PostgreSQL 12.2 on x86_64-apple-darwin18.7.0, compiled by Apple clang version 11.0.0 (clang-1100.0.33.17), 64-bit
+2020-09-23 12:51:27.322 CEST [1878] LOG:  listening on IPv6 address "::1", port 5432
+2020-09-23 12:51:27.322 CEST [1878] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2020-09-23 12:51:27.327 CEST [1878] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2020-09-23 12:51:27.390 CEST [1879] LOG:  database system was shut down at 2020-09-23 09:25:58 CEST
+2020-09-23 12:51:27.404 CEST [1878] LOG:  database system is ready to accept connections
+2020-09-23 18:29:55.011 CEST [1878] LOG:  received smart shutdown request
+2020-09-23 18:29:55.014 CEST [1878] LOG:  background worker "logical replication launcher" (PID 1885) exited with exit code 1
+2020-09-23 18:29:55.014 CEST [1880] LOG:  shutting down
+2020-09-23 18:29:55.033 CEST [1878] LOG:  database system is shut down
+2020-09-24 11:32:53.842 CEST [1106] LOG:  starting PostgreSQL 12.2 on x86_64-apple-darwin18.7.0, compiled by Apple clang version 11.0.0 (clang-1100.0.33.17), 64-bit
+2020-09-24 11:32:53.844 CEST [1106] LOG:  listening on IPv6 address "::1", port 5432
+2020-09-24 11:32:53.844 CEST [1106] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2020-09-24 11:32:53.846 CEST [1106] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2020-09-24 11:32:53.917 CEST [1107] LOG:  database system was shut down at 2020-09-23 18:29:55 CEST
+2020-09-24 11:32:53.933 CEST [1106] LOG:  database system is ready to accept connections
+2020-09-24 18:21:42.434 CEST [1106] LOG:  received smart shutdown request
+2020-09-24 18:21:42.435 CEST [1106] LOG:  background worker "logical replication launcher" (PID 1113) exited with exit code 1
+2020-09-24 18:21:42.435 CEST [1108] LOG:  shutting down
+2020-09-24 18:21:42.452 CEST [1106] LOG:  database system is shut down
+2020-09-25 12:23:29.987 CEST [2114] LOG:  starting PostgreSQL 12.2 on x86_64-apple-darwin18.7.0, compiled by Apple clang version 11.0.0 (clang-1100.0.33.17), 64-bit
+2020-09-25 12:23:29.989 CEST [2114] LOG:  listening on IPv6 address "::1", port 5432
+2020-09-25 12:23:29.989 CEST [2114] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2020-09-25 12:23:29.991 CEST [2114] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2020-09-25 12:23:30.048 CEST [2115] LOG:  database system was shut down at 2020-09-24 18:21:42 CEST
+2020-09-25 12:23:30.061 CEST [2114] LOG:  database system is ready to accept connections

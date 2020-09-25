@@ -1,68 +1,86 @@
-<div class="container">
-  <div class="my-profile-flex">
-    <div class="frame">
-      <div class="user-avatar" style="background-image: url('<%= @user.avatar %>');">
+<div class="profile-banner" style="background-image: linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)), url(https://images.unsplash.com/photo-1523895665936-7bfe172b757d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fill=crop&w=1050&q=80);">
+  <div class="container">
+    <div class="row">
+      <div class="col-6">
+        <div class="frame">
+          <div class="user-avatar" style="background-image: url('<%= @user.avatar %>');">
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="user-info">
-
-    </div>
-
-  </div> <!----- Closing the my-profile-flex div ---->
-
-
+      <div class="col-6">
+        <div class="user-info">
+         <p><%= @user.first_name.upcase %>  <%= @user.last_name.upcase %></p>
+         <p><%= @user.email.upcase %></p>
+         <p><%= @user.short_description.upcase %></p>
+        </div>
+      </div>
+    </div>  <!----- Closing the row div ---->
+  </div> <!----- Closing the profile-banner div ---->
+</div> <!----- Closing the container div ---->
+<div class="container">
   <div class="row">
-    <div class="my-bookings">
-      <h3>My Bookings</h3>
-      <div class="col-10"></div>
+    <div class="col-sm-6">
+      <p class="my-something-upcased">MY</p>
+      <p class="my-something-upcased margin-bottom-bookings">BOOKINGS</p>
       <% @bookings.each do |booking| %>
         <div class="booking-card">
           <img src=" <%= cl_image_path booking.art.photo.key %> ">
-          <div class="booking-info">
-            <h2><%= booking.art.name %></h2>
-            <p>From <%= booking.start_date %> To <%= booking.end_date %> </p>
+          <div class="booking-info-flex">
+            <div class="booking-info">
+              <h2><%= booking.art.name %></h2>
+              <p>From <%= booking.start_date %> </p>
+              <p>To <%= booking.end_date %> </p>
+            </div>
+            <div>
+              <% if booking.status == "Pending" %>
+                <p>Status: Pending</p>
+              <% elsif booking.status == "Accepted" %>
+                <p class="green-accepted">Status: Accepted</p>
+              <% elsif booking.status == "Declined" %>
+                <p class="red-declined">Status: Declined</p>
+              <% end %>
             </div>
           </div>
         </div>
       <% end %>
     </div> <!--- closing the my-bookings div --->
-  </div>  <!--- closing row div --->
-  <div class="row">
-    <div class="my-requests">
-    <h3>My Requests</h3>
+    <div class="col-sm-6">
+      <p class="my-something-upcased">MY</p>
+      <p class="my-something-upcased margin-bottom-bookings">REQUESTS</p>
       <% @artworks.each do |artwork| %>
-      <% artwork.bookings.each do |booking| %>
-        <div class="booking-card">
-          <img src=" <%= cl_image_path booking.art.photo.key %> ">
-          <div class="booking-info-flex">
-            <div class="booking-info">
-            <h2><%= booking.art.name %></h2>
-            <p><strong> Requested by: <%= booking.user.first_name %> <%= booking.user.last_name %> </strong></p>
-            <p>From <%= booking.start_date %> To <%= booking.end_date %> </p>
-            </div>
-            <div class="pending-booking">
-              <% if booking.status == "Pending" %>
-                <div>
-                  <%= link_to "Accept", accept_path(booking.id)  %>
-                </div>
-                <div>
-                  <%= link_to "Decline", decline_path(booking.id)  %>
-                </div>
-              <% elsif booking.status == "Accepted" %>
-              <div class="accepted">
-                <p>You accepted this booking</p>
-              </div>
-              <% else %>
-                <div class="accepted">
-                  <p>You declined this booking</p>
-                </div>
-              <% end %>
-            </div>
-            </div>
-          </div>
-        </div>
+        <% artwork.bookings.each do |booking| %>
+          <div class="booking-card">
+            <img src=" <%= cl_image_path booking.art.photo.key %> ">
+            <div class="booking-info-flex">
+              <div class="booking-info">
+                <h2><%= booking.art.name %></h2>
+                <p>From <%= booking.start_date %></p>
+                 <p>To <%= booking.end_date %> </p>
+              </div> <!--- closing the booking info div --->
+              <div class="pending-booking">
+                <% if booking.status == "Pending" %>
+                  <div>
+                    <%= link_to "Accept", accept_path(booking.id)  %>
+                  </div>
+                  <div>
+                    <%= link_to "Decline", decline_path(booking.id)  %>
+                  </div>
+                <% elsif booking.status == "Accepted" %>
+                  <div>
+                    <p class="green-accepted">You Accepted</p>
+                  </div>
+                <% else %>
+                  <div>
+                    <p class="red-declined">You Declined</p>
+                  </div>
+                <% end %>
+                <p><strong> Requested by: </strong></p>
+                <p><%= booking.user.first_name %> <%= booking.user.last_name %> </p>
+              </div> <!--- closing the pending booking div --->
+            </div> <!--- closing the booking-info-flex div --->
+          </div> <!--- closing the booking-card div --->
         <% end %>
       <% end %>
-    </div> <!--- closing the my-requests div --->
+    </div> <!--- closing the col-6 div --->
   </div> <!--- closing row div --->
-</div>
+</div> <!----- Closing the container div ---->

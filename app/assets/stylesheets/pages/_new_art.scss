@@ -26,8 +26,21 @@
   }
  }
 
+ .upload-photo {
+  border: 1px solid #d3d3d3;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-weight: 400;
+  background: white;
+  border-radius: 4px;
+  font-size: 20px;
+}
+
  .form-new {
     margin-bottom: 50px;
+    h3 {
+      text-align: center;
+    }
  }
 
  .flex-input {
