@@ -58,12 +58,14 @@
                  <p>To <%= booking.end_date %> </p>
               </div> <!--- closing the booking info div --->
               <div class="pending-booking">
+                <div class="d-flex justify-content-between">
                 <% if booking.status == "Pending" %>
-                  <div>
+                  <div class="green-accepted">
                     <%= link_to "Accept", accept_path(booking.id)  %>
                   </div>
-                  <div>
+                  <div class="red-declined">
                     <%= link_to "Decline", decline_path(booking.id)  %>
+                  </div>
                   </div>
                 <% elsif booking.status == "Accepted" %>
                   <div>

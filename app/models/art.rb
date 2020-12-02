@@ -5,5 +5,6 @@ class Art < ApplicationRecord
   has_many :bookings
 
   has_one_attached :photo
-  PAINT_TYPES = ["Oil on canvas", "Aquarel", "Handdrawn"]
+  PAINT_TYPES = ["Oil on canvas", "Aquarel", "Handdrawn", "Enamel on canvas", "Acrylic painting"]
+  CATEGORY = ["Surrealism", "Expressionism", "Cubism"]
 end

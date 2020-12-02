@@ -157,3 +157,30 @@
 2020-09-25 12:23:29.991 CEST [2114] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
 2020-09-25 12:23:30.048 CEST [2115] LOG:  database system was shut down at 2020-09-24 18:21:42 CEST
 2020-09-25 12:23:30.061 CEST [2114] LOG:  database system is ready to accept connections
+2020-09-25 16:04:47.184 CEST [5804] ERROR:  update or delete on table "arts" violates foreign key constraint "fk_rails_49a0c3db50" on table "bookings"
+2020-09-25 16:04:47.184 CEST [5804] DETAIL:  Key (id)=(6) is still referenced from table "bookings".
+2020-09-25 16:04:47.184 CEST [5804] STATEMENT:  DELETE FROM "arts" WHERE "arts"."id" = $1
+2020-09-25 18:25:18.465 CEST [2114] LOG:  received smart shutdown request
+2020-09-25 18:25:18.468 CEST [2114] LOG:  background worker "logical replication launcher" (PID 2121) exited with exit code 1
+2020-09-25 18:25:18.468 CEST [2116] LOG:  shutting down
+2020-09-25 18:25:18.482 CEST [2114] LOG:  database system is shut down
+2020-09-30 12:02:58.069 CEST [2075] LOG:  starting PostgreSQL 12.2 on x86_64-apple-darwin18.7.0, compiled by Apple clang version 11.0.0 (clang-1100.0.33.17), 64-bit
+2020-09-30 12:02:58.071 CEST [2075] LOG:  listening on IPv6 address "::1", port 5432
+2020-09-30 12:02:58.071 CEST [2075] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2020-09-30 12:02:58.074 CEST [2075] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2020-09-30 12:02:58.145 CEST [2076] LOG:  database system was shut down at 2020-09-25 18:25:18 CEST
+2020-09-30 12:02:58.159 CEST [2075] LOG:  database system is ready to accept connections
+2020-09-30 17:34:38.459 CEST [2075] LOG:  received smart shutdown request
+2020-09-30 17:34:38.462 CEST [2075] LOG:  background worker "logical replication launcher" (PID 2082) exited with exit code 1
+2020-09-30 17:34:38.462 CEST [2077] LOG:  shutting down
+2020-09-30 17:34:38.479 CEST [2075] LOG:  database system is shut down
+2020-10-16 23:34:03.649 CEST [10221] LOG:  starting PostgreSQL 12.2 on x86_64-apple-darwin18.7.0, compiled by Apple clang version 11.0.0 (clang-1100.0.33.17), 64-bit
+2020-10-16 23:34:03.651 CEST [10221] LOG:  listening on IPv6 address "::1", port 5432
+2020-10-16 23:34:03.651 CEST [10221] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2020-10-16 23:34:03.653 CEST [10221] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2020-10-16 23:34:03.707 CEST [10222] LOG:  database system was shut down at 2020-09-30 17:34:38 CEST
+2020-10-16 23:34:03.722 CEST [10221] LOG:  database system is ready to accept connections
+2020-10-19 08:20:06.527 CEST [10221] LOG:  background worker "logical replication launcher" (PID 10228) exited with exit code 1
+2020-10-19 08:20:06.529 CEST [10221] LOG:  received smart shutdown request
+2020-10-19 08:20:06.529 CEST [10223] LOG:  shutting down
+2020-10-19 08:20:06.547 CEST [10221] LOG:  database system is shut down
